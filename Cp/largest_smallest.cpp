@@ -6,7 +6,7 @@ int main()
 	int n;
 	cin >> n;
 
-	int *arr = new int[n];
+	int* arr = new int[n];
 
 	int largest = INT_MIN;
 	int smallest = INT_MAX;
