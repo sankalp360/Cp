@@ -1,17 +1,17 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int binary_search(int* arr, size, key)
+int binary_search(int* arr, int size, int key)
 {
 	int start = 0;
 	int end = size - 1;
 
 	int mid;
-	
+
 
 	while (start <= end)
 	{
-		start + ((end - start) / 2);
+		mid = start + ((end - start) / 2);
 
 		if (arr[mid] == key)
 			return mid;
@@ -41,7 +41,6 @@ int main()
 	}
 
 	int key;
-
 	cin >> key;
 
 	cout << binary_search(arr, n, key);
